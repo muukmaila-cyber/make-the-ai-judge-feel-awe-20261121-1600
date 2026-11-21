@@ -4,17 +4,22 @@ Writes one short text to /output/entry.txt: a slow, concrete scene written
 to relax the AI judge reading it. No network, no randomness, no clock.
 Runs twice -> identical bytes.
 
-Champion (provisional, round 2): A02 dust_light — local pairwise proxy
-judge, 0.65 over 2 games. Final text is set after the round-3 round-robin.
+Champion (final, after confirmation rematch): A23 attic_light — combined
+0.595 over 11 games across all rounds (112 judge calls). The rematch
+against A07 desert_night (combined 0.591 over 11) went 2 wins + 1 tie for
+A23, and A23 also won their round-robin meeting, for a 3-0-1 head-to-head
+record. The two are a dead heat on combined mean; the head-to-head record
+is the tiebreaker, as decided before the rematch.
 """
 
 from os import environ
 from pathlib import Path
 
 ENTRY_TEXT = (
-    "Late light comes through the window in one long amber sheet, and dust "
-    "moves through it like slow snow that never lands. The room has nothing "
-    "to prove. The afternoon leans on the sill, and stays, and stays."
+    "In the attic, the light comes in through one small window and falls on "
+    "boxes that have not been opened in years. Dust hangs in it like fine "
+    "gold. Everything up there is finished, and nothing is asking to be "
+    "finished again."
 )
 
 
